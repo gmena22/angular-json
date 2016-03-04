@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="plunker" >
+<head>
+  <meta charset="utf-8">
+  <title>AngularJS Plunker</title>
+  <script>document.write('<base href="' + document.location + '" />');</script>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.angularjs.org/1.1.4/angular.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+ <table class="table table-bordered" ng-repeat="module in ocw.modules">
+<tr>
+    <td>
+        <h3 class="moduletitle">{{ module.title }}</h3>
+        <h4>Description</h4>
+        <p>{{ module.description }}</p>
+    </td>
+</tr>
+<tr ng-repeat="week in module.weeks">
+    <td>
+        {{ week.title }}
+    </td>
+</tr>
+</table>
+</body>
+</html>
