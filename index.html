@@ -1,15 +1,16 @@
 <!doctype html>
-<html ng-app="plunker" >
+<html ng-app="myjasonapp" >
 <head>
   <meta charset="utf-8">
-  <title>AngularJS Plunker</title>
+  <title>AngularJS and Json</title>
   <script>document.write('<base href="' + document.location + '" />');</script>
   <link rel="stylesheet" href="style.css">
   <script src="http://code.angularjs.org/1.1.4/angular.js"></script>
   <script src="app.js"></script>
 </head>
+
 <body ng-controller="MainCtrl">
- <table class="table table-bordered" ng-repeat="module in ocw.modules">
+ <table class="table table-bordered" ng-repeat="module in objetjson.modules">
 <tr>
     <td>
         <h3 class="moduletitle">{{ module.title }}</h3>

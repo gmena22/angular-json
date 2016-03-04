@@ -1,4 +1,4 @@
-var app = angular.module('plunker', []);
+var app = angular.module('myjasonapp', []);
 
 app.controller('MainCtrl', function($scope) {
   var json = {
@@ -18,7 +18,7 @@ app.controller('MainCtrl', function($scope) {
         ]
   };
   
-  $scope.ocw = json;
+  $scope.objetjson = json;
   
   
 });
